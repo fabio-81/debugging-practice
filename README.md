@@ -29,4 +29,3 @@ Our users have reported the following problems:
 - Debug and fix each defect (in order if possible). Introduce each fix by creating a branch, pushing it to the remote repository, creating a pull request, and merging it into the mainline branch.
 
 Please review the accompanying class materials for additional details.
-
