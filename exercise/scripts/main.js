@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', function() {
       
       // If the card has already been matched, ignore it.
       if (card.classList.contains('is-matched')) {
+       
         return;
       }
 
@@ -48,3 +49,4 @@ window.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
