@@ -3,13 +3,12 @@ window.addEventListener('DOMContentLoaded', function() {
   var selectedCards = [];
   var matchedCards = [];
   
-  cards.forEach(function(card) {
+    cards.forEach(function(card) {
     card.addEventListener('click', function() {
       
       // If the card has already been matched, ignore it.
       if (card.classList.contains('is-matched')) {
-       
-        return;
+      return;
       }
 
       // If we haven't selected 2 cards yet, add the current card to the
@@ -21,7 +20,7 @@ window.addEventListener('DOMContentLoaded', function() {
       }
 
       // If we have selected two cards, see if they match.
-    if (selectedCards.length === 2) {
+      if (selectedCards.length === 2) {
       var card1 = selectedCards[0];
       var card2 = selectedCards[1];
         
@@ -39,11 +38,13 @@ window.addEventListener('DOMContentLoaded', function() {
          card2.classList.remove('is-selected');
          selectedCards = [];
          
-      }
+       }
            //If we've matched all the cards, display a message.
            if (matchedCards.length >= cards.length) {
             alert('You matched all the cards, Congratulations!');
+
           }
     });
   });
 });
+
